@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Container, Group, Burger, Image, SimpleGrid, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './HeaderSimple.module.css';
-import tlatoaniLogo from '../../assets/Logo v1.png'
+import tlatoaniLogo from '../../assets/logotransparent.png'
 
 const links = [
   { link: '/about', label: 'Home' },
@@ -32,13 +32,13 @@ export function HeaderSimple() {
 
   return (
     <header className={classes.header}>
-      <Container size="md" className={classes.inner}>
+      <Container fluid size="lg" className={classes.inner}>
         <SimpleGrid cols={3}>
-        <Text> Alan Sandoval's Home Page </Text>
-          <Image h="48" fit="contain" src={tlatoaniLogo} alt="Tlatoani Technologies Logo" />
-        <Group gap={5} visibleFrom="xs">
-          {items}
-        </Group>
+          <Text> Alan's Home Page </Text>
+          <Image h="64" fit="contain" src={tlatoaniLogo} alt="Tlatoani Technologies Logo" />
+          <Group gap={5} visibleFrom="xs">
+            {items}
+          </Group>
         </SimpleGrid>
 
         <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
