@@ -1,21 +1,17 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import tlatoaniLogo from './assets/Logo v1.png'
 import './App.css'
-import { HomeBanner } from './lib/HomeBanner/HomeBanner'
-
-// Import styles of packages that you've installed.
-// All packages except `@mantine/hooks` require styles imports
 import '@mantine/core/styles.css';
+import { MantineProvider, Image, Card } from '@mantine/core';
+import { HeaderSimple } from './lib/HeaderSimple/HeaderSimple';
 
-import { Container, MantineProvider, Image, Card } from '@mantine/core';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <MantineProvider>
+      <HeaderSimple />
       <>
         <Card>
           <a href="https://asandov.com" target="_blank">
