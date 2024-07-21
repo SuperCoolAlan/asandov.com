@@ -12,23 +12,14 @@ export function Welcome() {
       <Center>
         <Text>Welcome to Alan's home page</Text>
       </Center>
-      <Card withBorder padding="lg" radius="md" shadow="sm">
-        <Card.Section>
-          <Center>
-            <Avatar src={headShot} radius="md" size="250" alt="A photo of Alan" />
-          </Center>
-        </Card.Section>
-        <Space h="lg" />
-        <Card.Section>
-          <Group justify='center' gap="sm">
-            <GithubButton href="https://github.com/supercoolalan" >SuperCoolAlan</GithubButton>
-            <LinkedinButton href="https://www.linkedin.com/in/alan-sandoval" />
-          </Group>
-        </Card.Section>
-      </Card>
-      {/* <button onClick={() => setCount((count) => count + 1)}>
-        click me {count}
-      </button> */}
+      <Center>
+        <Avatar src={headShot} radius="md" size="250" alt="A photo of Alan" />
+      </Center>
+      <Center>
+        <button onClick={() => setCount((count) => count + 1)}>
+          click me {count}
+        </button>
+      </Center>
     </Container>
   )
 }
