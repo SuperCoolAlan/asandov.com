@@ -15,11 +15,16 @@ export function Welcome() {
       <Center>
         <Avatar src={headShot} radius="md" size="250" alt="A photo of Alan" />
       </Center>
-      <Center>
-        <button onClick={() => setCount((count) => count + 1)}>
-          click me {count}
-        </button>
-      </Center>
+      <Space h="xl" />
+      <Card>
+        <Text>This site is a construction zone! You will find bugs. Feel free to email me about them if you are so inclined.</Text>
+        <Center>
+          <button onClick={() => setCount((count) => count + 1)}>
+            click me {count}
+          </button>
+        </Center>
+      </Card>
+
     </Container>
   )
 }

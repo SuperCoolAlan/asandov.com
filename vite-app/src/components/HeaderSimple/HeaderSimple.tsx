@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Container, Group, Burger, Image, Grid, Text, Center, Space, MantineTheme, Button, useMantineColorScheme, ActionIcon } from '@mantine/core';
+import { Container, Group, Burger, Image, Grid, Center, Space, Button, useMantineColorScheme, ActionIcon } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './HeaderSimple.module.css';
 import tlatoaniLogo from '../../assets/logotransparent.png'
@@ -8,10 +8,11 @@ import { Link } from 'react-router-dom';
 import { IconMoon, IconMoonFilled, IconMoonStars, IconSun, IconSunFilled } from '@tabler/icons-react';
 
 const links = [
-  { link: '/about', label: 'Home' },
+  { link: '/', label: 'Home' },
   { link: '/coffee', label: 'Espresso' },
-  { link: '/grub', label: 'Gastronomy' },
-  { link: '/vroom', label: 'Cars' },
+  { link: '/work', label: 'About'}
+  // { link: '/grub', label: 'Gastronomy' },
+  // { link: '/vroom', label: 'Cars' },
 ];
 
 export function HeaderSimple() {
@@ -20,18 +21,21 @@ export function HeaderSimple() {
   const { colorScheme, toggleColorScheme } = useMantineColorScheme();
 
   const items = links.map((link) => (
-    <a
+    <Button
+      color={theme.black}
+      component='a'
+      size="sm"
       key={link.label}
       href={link.link}
       className={classes.link}
-      data-active={active === link.link || undefined}
+      // data-active={active === link.link || undefined} //TODO: fix routing and read current page to set active
       onClick={(event) => {
-        event.preventDefault();
+        // event.preventDefault();
         setActive(link.link);
       }}
     >
       {link.label}
-    </a>
+    </Button>
   ));
 
 
@@ -40,19 +44,25 @@ export function HeaderSimple() {
       <Container size="xl" className={classes.inner}>
         <Center>
           <Grid>
-            <Grid.Col span={2}>
-              <Image h="64" fit="contain" src={tlatoaniLogo} alt="Tlatoani Technologies Logo" />
-            </Grid.Col>
-            <Grid.Col span={8}>
+            {/* <Grid.Col span={1} >
+
+            </Grid.Col> */}
+            <Grid.Col span={3}>
               <Space h={18} />
-              <Group justify='space-between' gap={5} visibleFrom="xs">
-                {/* {items} */}
-                <Button size="xs">newpage</Button>
+              <Image h="64" w="64" src={tlatoaniLogo} alt="Tlatoani Technologies Logo" />
+            </Grid.Col>
+            <Grid.Col span={6}>
+              <Space h={18} />
+              <Group justify='space-between' gap={3} visibleFrom="xs">
+                {items}
               </Group>
             </Grid.Col>
             <Grid.Col span={2}>
+
+            </Grid.Col>
+            <Grid.Col span={1}>
               <Space h={24} />
-              <ActionIcon onClick={() => toggleColorScheme()} size="sm">
+              <ActionIcon onClick={() => toggleColorScheme()} size="sm" visibleFrom='xs'>
                 {colorScheme == 'dark' ? <IconSunFilled /> : <IconMoonStars />}
               </ActionIcon>
             </Grid.Col>
