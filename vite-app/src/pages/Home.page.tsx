@@ -5,6 +5,7 @@ export function HomePage() {
   return (
     <>
       <Welcome />
+      {/* TODO: my resume */}
       <ColorSchemeToggle />
     </>
   );

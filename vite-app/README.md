@@ -1,14 +1,6 @@
-# Mantine Vite template
+# Alan's Website
 
-## Features
-
-This template comes with the following features:
-
-- [PostCSS](https://postcss.org/) with [mantine-postcss-preset](https://mantine.dev/styles/postcss-preset)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Storybook](https://storybook.js.org/)
-- [Vitest](https://vitest.dev/) setup with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- ESLint setup with [eslint-config-mantine](https://github.com/mantinedev/eslint-config-mantine)
+Here, we run React with Vite. I use Mantine for UI elements, (React Router DOM) [https://www.npmjs.com/package/react-router-dom] for routing, and the app is hosted with Vercel.
 
 ## npm scripts
 
