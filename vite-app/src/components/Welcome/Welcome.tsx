@@ -20,7 +20,7 @@ export function Welcome() {
         </Card.Section>
         <Space h="lg" />
         <Card.Section>
-          <Group justify='center'>
+          <Group justify='center' gap="sm">
             <GithubButton href="https://github.com/supercoolalan" >SuperCoolAlan</GithubButton>
             <LinkedinButton href="https://www.linkedin.com/in/alan-sandoval" />
           </Group>
