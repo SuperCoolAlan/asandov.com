@@ -4,13 +4,13 @@ import { useDisclosure } from '@mantine/hooks';
 import classes from './HeaderSimple.module.css';
 import tlatoaniLogo from '../../assets/logotransparent.png'
 import { theme } from '@/theme';
+import { IconMoonStars, IconSunFilled } from '@tabler/icons-react';
 import { Link } from 'react-router-dom';
-import { IconMoon, IconMoonFilled, IconMoonStars, IconSun, IconSunFilled } from '@tabler/icons-react';
 
 const links = [
   { link: '/', label: 'Home' },
   { link: '/coffee', label: 'Espresso' },
-  { link: '/work', label: 'About'}
+  { link: '/work', label: 'About' }
   // { link: '/grub', label: 'Gastronomy' },
   // { link: '/vroom', label: 'Cars' },
 ];
@@ -23,10 +23,10 @@ export function HeaderSimple() {
   const items = links.map((link) => (
     <Button
       color={theme.black}
-      component='a'
+      component={Link}
       size="sm"
       key={link.label}
-      href={link.link}
+      to={link.link}
       className={classes.link}
       // data-active={active === link.link || undefined} //TODO: fix routing and read current page to set active
       onClick={(event) => {

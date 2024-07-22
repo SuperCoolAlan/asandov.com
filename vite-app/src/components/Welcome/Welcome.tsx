@@ -9,15 +9,13 @@ export function Welcome() {
 
   return (
     <Container size={300}>
-      <Center>
-        <Text>Welcome to Alan's home page</Text>
-      </Center>
+      <Text ta="center" fw={700} size="xl">Welcome to Alan's <br /> home page!</Text>
       <Center>
         <Avatar src={headShot} radius="md" size="250" alt="A photo of Alan" />
       </Center>
       <Space h="xl" />
       <Card>
-        <Text>This site is a construction zone! You will find bugs. Feel free to email me about them if you are so inclined.</Text>
+        <Text>This site is a construction zone! You will find bugs.</Text>
         <Center>
           <button onClick={() => setCount((count) => count + 1)}>
             click me {count}

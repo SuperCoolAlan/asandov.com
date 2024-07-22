@@ -8,7 +8,6 @@ import { FooterSocial } from './components/FooterSocial/FooterSocial';
 export default function App() {
   return (
     <MantineProvider theme={theme} defaultColorScheme="dark">
-      <HeaderSimple />
       <Router />
       <FooterSocial />
     </MantineProvider>
