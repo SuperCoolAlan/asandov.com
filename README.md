@@ -1,10 +1,10 @@
 # asandov.com
 
 Helpful links for tools in use:
-- (Vite.js)[https://vitejs.dev/]
-- (Mantine)[https://mantine.dev/]
-- (React)[https://react.dev/]
-- (react-router-dom)[https://reactrouter.com/en/main]
+- [Vite](https://vitejs.dev/)
+- [Mantine](https://mantine.dev/)
+- [React](https://react.dev/)
+- [react-router-dom](https://reactrouter.com/en/main)
 
 ## devcontainer
 
