@@ -1,5 +1,10 @@
-# Web Site
-My web playground
+# asandov.com
+
+Helpful links for tools in use:
+- [Vite](https://vitejs.dev/)
+- [Mantine](https://mantine.dev/)
+- [React](https://react.dev/)
+- [react-router-dom](https://reactrouter.com/en/main)
 
 ## devcontainer
 
