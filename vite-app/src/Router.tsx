@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     element: <EspressoPage />,
   },
   {
-    path: '/work',
+    path: '/about',
     element: <WorkInfoPage />,
   },
 ]);
