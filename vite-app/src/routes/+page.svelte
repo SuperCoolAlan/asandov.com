@@ -8,7 +8,7 @@
 </script>
 
 <svelte:head>
-	<title>Alan Sandoval | Software Engineer</title>
+	<title>Alan Sandoval | Computer Engineer</title>
 </svelte:head>
 
 <main class="container mx-auto px-4 py-16 max-w-4xl">
