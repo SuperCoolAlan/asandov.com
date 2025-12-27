@@ -1,26 +1,38 @@
-# Alan's Website
+# sv
 
-Here, we run React with Vite. I use Mantine for UI elements, (React Router DOM) [https://www.npmjs.com/package/react-router-dom] for routing, and the app is hosted with Vercel.
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## npm scripts
+## Creating a project
 
-## Build and dev scripts
+If you're seeing this, you've probably already done this step. Congrats!
 
-- `dev` – start development server
-- `build` – build production version of the app
-- `preview` – locally preview production build
+```sh
+# create a new project in the current directory
+npx sv create
 
-### Testing scripts
+# create a new project in my-app
+npx sv create my-app
+```
 
-- `typecheck` – checks TypeScript types
-- `lint` – runs ESLint
-- `prettier:check` – checks files with Prettier
-- `vitest` – runs vitest tests
-- `vitest:watch` – starts vitest watch
-- `test` – runs `vitest`, `prettier:check`, `lint` and `typecheck` scripts
+## Developing
 
-### Other scripts
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-- `storybook` – starts storybook dev server
-- `storybook:build` – build production storybook bundle to `storybook-static`
-- `prettier:write` – formats all files with Prettier
+```sh
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```sh
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
