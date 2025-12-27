@@ -21,7 +21,7 @@
 				href="https://github.com/supercoolalan"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="p-3 rounded-full hover:bg-surface-200 dark:hover:bg-surface-700 transition-colors"
+				class="p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
 				aria-label="GitHub"
 			>
 				<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -32,7 +32,7 @@
 				href="https://linkedin.com/in/alan-sandoval"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="p-3 rounded-full hover:bg-surface-200 dark:hover:bg-surface-700 transition-colors"
+				class="p-3 rounded-full hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
 				aria-label="LinkedIn"
 			>
 				<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -43,7 +43,7 @@
 	</section>
 
 	<section class="mt-16">
-		<p class="text-surface-400 leading-relaxed">
+		<p class="text-slate-500 dark:text-slate-400 leading-relaxed">
 			I build tech stacks collaboratively! I'm familiar with embedded compute systems, cloud-to-edge integrations, and self-hosted cloud-native technologies. 
 		</p>
 	</section>
