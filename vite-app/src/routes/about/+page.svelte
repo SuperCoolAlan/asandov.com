@@ -7,7 +7,7 @@
 
 	<section class="space-y-6 text-surface-400 leading-relaxed">
 		<p>
-			Software engineer with a focus on building reliable, scalable systems. Currently interested
+			Computer engineer with a focus on building reliable, scalable systems. Currently interested
 			in infrastructure, Kubernetes, and homelabbing.
 		</p>
 
