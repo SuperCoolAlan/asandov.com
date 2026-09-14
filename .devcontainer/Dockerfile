@@ -11,7 +11,7 @@ RUN apt-get install -y git procps
 
 # Install Node.js
 RUN apt-get install -y curl && \
-    curl -fsSL https://deb.nodesource.com/setup_22.x -o nodesource_setup.sh && \
+    curl -fsSL https://deb.nodesource.com/setup_24.x -o nodesource_setup.sh && \
     bash nodesource_setup.sh && \
     apt-get install -y nodejs && \
     node -v
