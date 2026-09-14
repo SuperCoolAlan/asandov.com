@@ -7,13 +7,12 @@
 
 	<section class="space-y-6 text-slate-500 dark:text-slate-400 leading-relaxed">
 		<p>
-			Computer engineer with a focus on building reliable, scalable systems. Currently interested
-			in infrastructure, Kubernetes, and homelabbing.
+			I'm a Chicano engineer building decentralized, censorship-resistant systems, because who
+			controls data shapes who holds wealth.
 		</p>
 
-		<p>
-			When not writing code, you'll find me dialing in espresso shots or tinkering with my homelab
-			cluster.
-		</p>
+		<p>I run infrastructure from bare metal to Kubernetes, for myself and for others.</p>
+
+		<p>Off the clock: dialing in espresso, or tinkering with my homelab.</p>
 	</section>
 </main>
