@@ -1,8 +1,11 @@
 <svelte:head>
 	<title>About | Alan Sandoval</title>
+	<meta name="description" content="Chicano engineer building decentralized, censorship-resistant systems and running infrastructure from bare metal to Kubernetes." />
+	<meta property="og:title" content="About | Alan Sandoval" />
+	<meta property="og:description" content="Chicano engineer building decentralized, censorship-resistant systems and running infrastructure from bare metal to Kubernetes." />
 </svelte:head>
 
-<main class="container mx-auto px-4 py-16 max-w-4xl">
+<div class="container mx-auto px-4 py-16 max-w-4xl">
 	<h1 class="text-4xl font-bold mb-8">About</h1>
 
 	<section class="space-y-6 text-slate-500 dark:text-slate-400 leading-relaxed">
@@ -15,4 +18,4 @@
 
 		<p>Off the clock: dialing in espresso, or tinkering with my homelab.</p>
 	</section>
-</main>
+</div>
