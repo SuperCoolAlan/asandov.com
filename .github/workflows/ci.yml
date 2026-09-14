@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  # branch protection requires the "build" check by this job name; renaming it blocks merges
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: sveltekit-app
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: sveltekit-app/.nvmrc
+          cache: npm
+          cache-dependency-path: sveltekit-app/package-lock.json
+
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build
