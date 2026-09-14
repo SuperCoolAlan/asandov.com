@@ -8,6 +8,9 @@
 
 <svelte:head>
 	<title>Service Status | asandov.com</title>
+	<meta name="description" content="Live status of services hosted by Alan Sandoval." />
+	<meta property="og:title" content="Service Status | asandov.com" />
+	<meta property="og:description" content="Live status of services hosted by Alan Sandoval." />
 </svelte:head>
 
 <div class="h-[calc(100vh-8rem)]">

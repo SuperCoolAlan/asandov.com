@@ -1,19 +1,13 @@
-<script lang="ts">
-	import headshot from '$lib/assets/headshot.jpg';
-
-	const links = [
-		{ href: 'https://github.com/asandov', label: 'GitHub', icon: 'github' },
-		{ href: 'https://linkedin.com/in/alanmsandoval', label: 'LinkedIn', icon: 'linkedin' }
-	];
-</script>
-
 <svelte:head>
 	<title>Alan Sandoval | Computer Engineer</title>
+	<meta name="description" content="Alan Sandoval, computer engineer working on embedded systems, cloud-to-edge integrations, and self-hosted cloud-native infrastructure." />
+	<meta property="og:title" content="Alan Sandoval | Computer Engineer" />
+	<meta property="og:description" content="Alan Sandoval, computer engineer working on embedded systems, cloud-to-edge integrations, and self-hosted cloud-native infrastructure." />
 </svelte:head>
 
-<main class="container mx-auto px-4 py-16 max-w-4xl">
+<div class="container mx-auto px-4 py-16 max-w-4xl">
 	<section class="text-center space-y-6">
-		<img src={headshot} alt="Alan Sandoval" class="w-48 h-48 rounded-full mx-auto object-cover" />
+		<enhanced:img src="$lib/assets/headshot.jpg" width="384" alt="Alan Sandoval" class="w-48 h-48 rounded-full mx-auto object-cover" />
 		<h1 class="text-5xl font-bold">Alan Sandoval</h1>
 
 		<div class="flex justify-center gap-4 pt-4">
@@ -47,4 +41,4 @@
 			I build tech stacks collaboratively! I'm familiar with embedded compute systems, cloud-to-edge integrations, and self-hosted cloud-native technologies. 
 		</p>
 	</section>
-</main>
+</div>

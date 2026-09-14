@@ -1,7 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import logo from '$lib/assets/logotransparent.png';
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import { browser } from '$app/environment';
 
 	let { children } = $props();
@@ -49,7 +48,10 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={logo} />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Alan Sandoval" />
+	<meta property="og:image" content="https://www.asandov.com/og.jpg" />
+	<meta name="twitter:card" content="summary" />
 </svelte:head>
 
 <div class="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-50">
@@ -58,7 +60,7 @@
 			<div class="flex items-center justify-between">
 				<!-- Logo -->
 				<a href="/" class="flex items-center gap-2">
-					<img src={logo} alt="Logo" class="h-10 w-10" />
+					<enhanced:img src="$lib/assets/logotransparent.png" width="80" alt="Logo" class="h-10 w-10" />
 					<span class="text-xl font-bold">asandov</span>
 				</a>
 
@@ -68,8 +70,8 @@
 						<a
 							href={link.href}
 							class="px-3 py-2 rounded-lg transition-colors hover:bg-slate-200 dark:hover:bg-slate-700"
-							class:bg-slate-200={$page.url.pathname === link.href}
-							class:dark:bg-slate-700={$page.url.pathname === link.href}
+							class:bg-slate-200={page.url.pathname === link.href}
+							class:dark:bg-slate-700={page.url.pathname === link.href}
 						>
 							{link.label}
 						</a>
@@ -126,8 +128,8 @@
 								href={link.href}
 								onclick={() => mobileMenuOpen = false}
 								class="px-3 py-2 rounded-lg transition-colors hover:bg-slate-200 dark:hover:bg-slate-700"
-								class:bg-slate-200={$page.url.pathname === link.href}
-								class:dark:bg-slate-700={$page.url.pathname === link.href}
+								class:bg-slate-200={page.url.pathname === link.href}
+								class:dark:bg-slate-700={page.url.pathname === link.href}
 							>
 								{link.label}
 							</a>
